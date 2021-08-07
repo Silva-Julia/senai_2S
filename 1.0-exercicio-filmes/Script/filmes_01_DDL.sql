@@ -1,9 +1,9 @@
 ---CRIA UM BANCO DE DADOS CHAMADO CATALOGO.
-create database CATALOGO;
+create database CATALOGO_JULIA;
 GO 
 
 --define o banco de dados que sera utilizado
-USE CATALOGO;
+USE CATALOGO_JULIA;
 GO
 
 CREATE TABLE GENERO (

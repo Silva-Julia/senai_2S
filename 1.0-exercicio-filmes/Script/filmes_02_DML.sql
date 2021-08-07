@@ -1,4 +1,4 @@
-USE CATALOGO;
+USE CATALOGO_JULIA;
 GO
 
 INSERT INTO GENERO (nomeGenero)
@@ -7,7 +7,7 @@ GO
 
 INSERT INTO FILME (tituloFilme,idGenero)
 VALUES ('Rambo',1), ('Vingadores',1),
-('GHOST',3), ('DIARIO DE UMA PAIXAO',3);
+('GHOST',2), ('DIARIO DE UMA PAIXAO',2);
 GO
 
 update FILME SET tituloFilme = 'RAMBO 2' 

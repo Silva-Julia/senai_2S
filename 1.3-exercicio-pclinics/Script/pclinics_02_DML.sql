@@ -1,20 +1,28 @@
-USE CLINICAPET;
+USE CLINICAPET_JULIA;
 GO
 
 INSERT INTO CLINICA(nomeClinica)
-VALUES ('R'), ('S');
+VALUES ('RPets'), ('SCuidados');
 GO
 
 INSERT INTO VETERINARIO(idClinica,nomeVeterinario)
-VALUES (1,'SAULO'), (2,'LUCAS'), (1,'JULIA');
+VALUES (1,'SAULO'), (2,'JULIA');
+GO
+
+INSERT INTO TIPOPET(nomeTipo)
+VALUES ('GATO'), ('CACHORRO'), ('CALOPSITA');
+GO
+
+INSERT INTO RACA(idTipo, nomeRaca)
+VALUES (1, 'SIAMES'), (2, 'GOLDEN'), (3, 'ARLEQUO');
 GO
 
 INSERT INTO DONO(nomeDono)
 VALUES ('THIAGO'), ('CLAUDIA');
 GO
 
-INSERT INTO PETS(idRaca, idDono, nomePet)
-VALUES (1,2, 'CHARLIE'), (2,1, 'DUCK');
+INSERT INTO PETS(idDono, nomePet)
+VALUES (2, 'CHARLIE'), (1, 'DUCK');
 GO
 
 INSERT INTO CONSULTA(idPets, idVeterinario)

@@ -1,26 +1,26 @@
-USE LOCADORA;
+USE LOCADORA_JULIA;
 GO
 
 INSERT INTO EMPRESA (nomeEmpresa)
-VALUES ('UNIDOS');
+VALUES ('UNIDOS'), ('LOCALIZA');
 GO
 
 INSERT INTO MARCA (nomeMarca)
-VALUES ('FIAT'),('BWM'),('FORD');
+VALUES ('FIAT'),('BWM');
 GO
 
-INSERT INTO CLIENTE (nomeCliente)
-VALUES ('MARIA'), ('JULIA');
+INSERT INTO CLIENTE (nomeCliente, cpfCliente)
+VALUES ('MARIA',444444), ('JULIA',77777);
 GO
 
 INSERT INTO MODELO(idMarca, nomeModelo)
-VALUES (1,'GOL'), (2,'PALIO'), (3,'JETTA');
+VALUES (1,'GOL'), (2,'PALIO');
 GO
 
-INSERT INTO VEICULO(idModelo, descricaoPlaca)
-VALUES (1,'AAAA'), (2,'BBBB'), (3,'CCCC');
+INSERT INTO VEICULO(idModelo, idEmpresa, placa)
+VALUES (1,2,'AAAA'), (2,1,'BBBB');
 GO
 
-INSERT INTO ALUGUEL (idVeiculo, idCliente, dataRetirada, dataDevolucao)
-VALUES (1,2,'10/08/2021', '20/08/2021'), (2,3, '05/07/2020', '10/07/2020'), (3,1, '20/05/2021', '31/05/2021');
+INSERT INTO ALUGUEL(idVeiculo, idCliente, dataInicio, dataFim)
+VALUES (1,2,'10/08/2021', '20/08/2021'), (2,1, '05/07/2020', '10/07/2020');
 GO
