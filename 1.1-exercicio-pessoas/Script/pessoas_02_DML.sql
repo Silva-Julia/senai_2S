@@ -15,7 +15,5 @@ VALUES (1,'s.santos@email.com'),
 GO
 
 INSERT INTO CNH (idPessoa,descricao)
-VALUES (1,'132')
-
-INSERT INTO CNH (idPessoa,descricao)
-VALUES (2,'4343')
+VALUES (1,'132'),(2,'4343');
+GO

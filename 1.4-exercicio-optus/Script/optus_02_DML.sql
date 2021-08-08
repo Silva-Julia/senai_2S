@@ -20,5 +20,6 @@ GO
 
 INSERT INTO USUARIO (nomeUsuario, email, senha, permissao)
 VALUES ('SAULO', 'saulo@gmail.com', 33333, 'ADM'), 
-('LUCAS', 'lucas@gmail.com', 55555, 'ADM'), ('PEDRO', 'pedro@gmail.com', 22222,'COMUM');
+       ('LUCAS', 'lucas@gmail.com', 55555, 'ADM'), 
+       ('PEDRO', 'pedro@gmail.com', 22222,'COMUM');
 GO

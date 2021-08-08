@@ -12,5 +12,5 @@ ON PESSOA.idPessoa = TELEFONE.idTelefone
 INNER JOIN EMAIL
 ON PESSOA.idPessoa = EMAIL.idEmail
 INNER JOIN CNH
-ON PESSOA.idPessoa = CNH.idCnh;
+ON PESSOA.idPessoa = CNH.idCNH;
 GO

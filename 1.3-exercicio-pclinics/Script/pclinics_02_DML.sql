@@ -5,8 +5,8 @@ INSERT INTO CLINICA(nomeClinica)
 VALUES ('RPets'), ('SCuidados');
 GO
 
-INSERT INTO VETERINARIO(idClinica,nomeVeterinario)
-VALUES (1,'SAULO'), (2,'JULIA');
+INSERT INTO VETERINARIO(idClinica, nomeVeterinario, crmv)
+VALUES (1,'SAULO',354785), (2,'JULIA', 213456);
 GO
 
 INSERT INTO TIPOPET(nomeTipo)
