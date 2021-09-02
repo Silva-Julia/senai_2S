@@ -8,8 +8,8 @@ namespace Senai.Rental.WebApi.Domains
     public class VeiculoDomains
     {
         public int idVeiculo { get; set; }
-        public int idModelo { get; set; }
-        public int idEmpresa { get; set; }
+        public  ModeloDomains Modelo { get; set; }
+        public EmpresaDomains Empresa { get; set;}
         public string placa { get; set; }
     }
 }

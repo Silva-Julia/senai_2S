@@ -36,7 +36,7 @@ namespace Senai.Rental.WebApi.Repositores
         {
             using (SqlConnection con = new SqlConnection(stringConexao))
             {
-                string querySelectById = "SELECT nomeCliente, idCliente FROM CLIENTE WHERE idCliente = @idCliente";
+                string querySelectById = "SELECT nomeCliente, idCliente, sobrenomeCliente FROM CLIENTE WHERE idCliente = @idCliente";
 
                 con.Open();
 
@@ -70,7 +70,7 @@ namespace Senai.Rental.WebApi.Repositores
         {
             using (SqlConnection con = new SqlConnection(stringConexao))
             {
-                string queryInsert = "INSERT INTO CLIENTE (nomeCliente) VALUES (@nomeCliente)";
+                string queryInsert = "INSERT INTO CLIENTE (nomeCliente, sobrenomeCliente, cpfCliente) VALUES (@nomeCliente, @sobrenomeCliente, @cpfCliente)";
 
                 con.Open();
 
@@ -114,7 +114,7 @@ namespace Senai.Rental.WebApi.Repositores
 
             using (SqlConnection con = new SqlConnection(stringConexao))
             {
-                string querySelectAll = "SELECT idCliente, nomeCliente FROM CLIENTE";
+                string querySelectAll = "SELECT idCliente, nomeCliente, cpfCliente, sobrenomeCliente FROM CLIENTE";
 
                 con.Open();
 
@@ -137,7 +137,11 @@ namespace Senai.Rental.WebApi.Repositores
                             idCliente = Convert.ToInt32(rdr[0]),
 
                             //atribui a propriedade  o valor da segunda coluna da tabela do banco de dados.
-                            nomeCliente = rdr[1].ToString()
+                            nomeCliente = rdr[1].ToString(),
+
+                            cpfCliente = rdr[1].ToString(),
+
+                            sobrenomeCliente = rdr[1].ToString()
                         };
 
                         //adiciona o objeto genero criado a lista listaGeneros
