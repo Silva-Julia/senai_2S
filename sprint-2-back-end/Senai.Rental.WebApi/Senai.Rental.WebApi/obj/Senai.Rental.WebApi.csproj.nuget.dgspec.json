@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fic\\Desktop\\senai_sprint1_bd\\sprint-2-back-end\\Senai.Rental.WebApi\\Senai.Rental.WebApi\\Senai.Rental.WebApi.csproj": {}
+    "C:\\Users\\Usuario\\Documents\\Julia\\SENAI\\senai_sprint1_bd\\sprint-2-back-end\\Senai.Rental.WebApi\\Senai.Rental.WebApi\\Senai.Rental.WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fic\\Desktop\\senai_sprint1_bd\\sprint-2-back-end\\Senai.Rental.WebApi\\Senai.Rental.WebApi\\Senai.Rental.WebApi.csproj": {
+    "C:\\Users\\Usuario\\Documents\\Julia\\SENAI\\senai_sprint1_bd\\sprint-2-back-end\\Senai.Rental.WebApi\\Senai.Rental.WebApi\\Senai.Rental.WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fic\\Desktop\\senai_sprint1_bd\\sprint-2-back-end\\Senai.Rental.WebApi\\Senai.Rental.WebApi\\Senai.Rental.WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\Julia\\SENAI\\senai_sprint1_bd\\sprint-2-back-end\\Senai.Rental.WebApi\\Senai.Rental.WebApi\\Senai.Rental.WebApi.csproj",
         "projectName": "Senai.Rental.WebApi",
-        "projectPath": "C:\\Users\\fic\\Desktop\\senai_sprint1_bd\\sprint-2-back-end\\Senai.Rental.WebApi\\Senai.Rental.WebApi\\Senai.Rental.WebApi.csproj",
-        "packagesPath": "C:\\Users\\fic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fic\\Desktop\\senai_sprint1_bd\\sprint-2-back-end\\Senai.Rental.WebApi\\Senai.Rental.WebApi\\obj\\",
+        "projectPath": "C:\\Users\\Usuario\\Documents\\Julia\\SENAI\\senai_sprint1_bd\\sprint-2-back-end\\Senai.Rental.WebApi\\Senai.Rental.WebApi\\Senai.Rental.WebApi.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Documents\\Julia\\SENAI\\senai_sprint1_bd\\sprint-2-back-end\\Senai.Rental.WebApi\\Senai.Rental.WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\fic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,9 +40,21 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.1, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.2, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.12.2, )"
             }
           },
           "imports": [
@@ -63,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
